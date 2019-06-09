@@ -3,9 +3,14 @@
 Examples to build or run images, based in php with some extensions enabled
 Sometimes it's very dificulty to enable some extensions , this containers will resolve your problem :D
 
-In each folder contain a example to test image, you need docker-compose then just execute the command:
+In each folder contain a example to test image, you need docker-compose then just execute the command/actions:
+<br />
+* 1.0
+    * <strong>docker-composer up -d</strong>
+* 1.1
+    * <strong>unzip</strong> 1.1/config-container/app/oracle-lib.zip
+    * <strong>docker-composer up -d</strong>
 
-* <strong>docker-composer up -d</strong>
 
 Versions PHP <br />
 <b>5.6 - Apache</b>
