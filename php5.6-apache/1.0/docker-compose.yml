@@ -1,0 +1,14 @@
+version: 3
+services:
+  phpServer:
+    image: dtavares/php7.3-apache:1.0
+    container_name: app_p
+    ports:
+      - "80:80"
+    volumes:
+      - ./www-container/app:/var/www/html
+      - ./tmp-container/app/upload-temp:/tmp
+      - ./config-container/app/apache/sites-available:/etc/apache2/sites-available
+      - ./config-container/app/apache/sites-enabled:/etc/apache2/sites-enabled
+      - ./config-container/app/apache/hosts:/etc/hosts
+      - ./config-container/app/php/personal.ini:/usr/local/etc/php/conf.d/personal.ini
