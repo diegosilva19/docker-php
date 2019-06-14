@@ -7,8 +7,11 @@ In each folder contain a example to test image, you need docker-compose then jus
 <br />
 * 1.0
     * <strong>docker-composer up -d</strong>
-* 1.1
-    * <strong>unzip</strong> 1.1/config-container/app/oracle-lib.zip
+* 1.1 - 1.2
+    * <strong>unzip</strong> build-container/app/php/oracle-lib.zip
+    * Enable Oracle Extension
+        * Create symbolic link (Linux / Mac Or Windows = Copy) dir oracle-lib to run image **Required**
+            * <b>ln -s</b> /your-system-path/build-container/app/php/oracle-lib /your-system-path/php5.6-apache/1.x/config-container/app/oracle-lib
     * <strong>docker-composer up -d</strong>
 
 

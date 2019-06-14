@@ -1,0 +1,17 @@
+version: '3'
+services:
+  phpServer:
+    image: dtavares/php5.6-apache:1.2
+    container_name: app
+    ports:
+      - "80:80"
+      - "9000:9000"
+    volumes:
+      - ./www-container/app:/var/www/html
+      - ./tmp-container/app/upload-temp:/tmp
+      - "./config-container/app/oracle-lib:/usr/local/instantclient_12_2"
+      - ./config-container/app/apache/envvars:/etc/apache2/envvars
+      - ./config-container/app/apache/sites-available:/etc/apache2/sites-available
+      - ./config-container/app/apache/sites-enabled:/etc/apache2/sites-enabled
+      - ./config-container/app/apache/hosts:/etc/hosts
+      - ./config-container/app/php/personal.ini:/usr/local/etc/php/conf.d/personal.ini

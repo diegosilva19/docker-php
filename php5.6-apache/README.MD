@@ -1,6 +1,23 @@
 <h1>Change Log</h1>
 
 </p>
+<h5><strong>1.2</strong></h5>
+<ul>
+    <li>Add supoort to PhpUnit with xdebug remote port 9000:9000 </li>
+    <li>New extensions:
+        <ul>
+            <li>exif</li>
+            <li>gettext</li>
+            <li>shmop</li>
+            <li>sysvmsg</li>
+            <li>sysvsem</li>
+            <li>sysvshm</li>
+            <li>wddx</li>
+            <li>xsl</li>
+        </ul>
+     </li>
+</ul>
+
 <h5><strong>1.1</strong></h5>
 <ul>
     <li>add supoort to oracle extension oci8.so, pdo_oci (read instructions to use image)</li>

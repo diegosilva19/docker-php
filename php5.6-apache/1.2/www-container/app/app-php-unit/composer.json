@@ -1,0 +1,14 @@
+{
+    "name": "app/PhpUnit",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    },
+    "scripts": {
+        "run-test": "phpunit"
+    },
+    "require": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
