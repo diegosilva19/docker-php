@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./vendor/autoload.php">
+
+    <testsuite name="My Test Suite">
+        <directory >test</directory>
+    </testsuite>
+    <filter>
+        <whitelist
+                addUncoveredFilesFromWhitelist="true"
+                processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./build/"/>
+        <log target="build/coverage.clover" type="coverage-clover"/>
+
+    </logging>
+
+</phpunit>
