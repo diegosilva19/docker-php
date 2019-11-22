@@ -1,4 +1,4 @@
-version: 3
+version: '3'
 services:
   phpServer:
     image: dtavares/php7.3-apache:1.0
